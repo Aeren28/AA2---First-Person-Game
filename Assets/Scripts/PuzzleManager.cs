@@ -15,6 +15,14 @@ public class PuzzleManager : MonoBehaviour
     private int pinkCounter; 
     private int coralCounter; 
 
+    public void Winner()
+    {
+        if (PuzzlePiece1[0].activeInHierarchy && PuzzlePiece2[1].activeInHierarchy && PuzzlePiece3[2].activeInHierarchy && PuzzlePiece4[3].activeInHierarchy)
+        {
+            Debug.Log("You Win");
+        }
+    }
+
     public void PurpleATM()
     {
         purpleCounter++;
