@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PuzzleManager : MonoBehaviour
     public GameObject[] PuzzlePiece3;
     public GameObject[] PuzzlePiece4;
 
+    public UnityEvent albertoRosita; 
+   
     private int purpleCounter;
     private int cyanCounter; 
     private int pinkCounter; 
@@ -20,7 +23,9 @@ public class PuzzleManager : MonoBehaviour
         if (PuzzlePiece1[0].activeInHierarchy && PuzzlePiece2[1].activeInHierarchy && PuzzlePiece3[2].activeInHierarchy && PuzzlePiece4[3].activeInHierarchy)
         {
             Debug.Log("You Win");
+            albertoRosita.Invoke();
         }
+
     }
 
     public void PurpleATM()
