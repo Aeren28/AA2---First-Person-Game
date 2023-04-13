@@ -13,7 +13,7 @@ public class timer : MonoBehaviour
 
     public UnityEvent gameOverEvent;
 
-    private void Update()
+    void Update()
     {
         currentTime -= Time.deltaTime;
         displayTime = Mathf.Round(currentTime);
