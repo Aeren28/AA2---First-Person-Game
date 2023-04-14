@@ -8,7 +8,7 @@ public class timer : MonoBehaviour
 {
     public TMP_Text displayTimeText;
 
-    private float currentTime = 75;
+    private float currentTime = 60;
     private float displayTime;
 
     public UnityEvent gameOverEvent;
